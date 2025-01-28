@@ -241,8 +241,8 @@ body {
 .about-img img {
   box-sizing: border-box;
   border-radius: 50%;
-  width: 60vh;
-  height: 60vh;
+  width: 100vh;
+  height: 100vh;
   padding: 50px;
   transition: transform 0.2s; /* Animation */
   margin: 0 auto;
@@ -259,7 +259,7 @@ body {
 
 .about-text h4 {
   color: black;
-  font-size: 29px;
+  font-size: 19px;
   font-weight: 600;
   line-height: 1.7;
   margin: 15px 0 30px;
