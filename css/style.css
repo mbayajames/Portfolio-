@@ -382,10 +382,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-} 
+}
 
 .myskillss {
-  
   gap: 50px;
   display: flex;
   border-left: 20px;
@@ -420,7 +419,6 @@ body {
   animation: slideLeft 1s ease forwards;
   animation-delay: 2s;
   margin-bottom: 200px;
-
 
   /* margin-top: 20px; */
   /* gap: 50px;
@@ -462,10 +460,6 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
-
-
-
-
 
 /* .container1 {
   width: 600px;
@@ -613,7 +607,6 @@ body {
 
 /* CONTAINER IN PROFESSION SKILLS */
 
-
 /* 
 .contain {
   width: 600px;
@@ -749,12 +742,9 @@ body {
   justify-content: center;
   color: white;
   background-color: none;
-} */ 
+} */
 
 /* Qualifications */
-
-
-
 
 /* PORTFOLIO */
 
@@ -813,8 +803,6 @@ body {
 .auto h4:hover {
   color: #0ffafa;
 } */
-
-
 
 /* EXPERIENCES */
 /* .developer {
@@ -877,7 +865,6 @@ body {
   animation-delay: 2s;
 }  */
 
-
 /* qualification */
 .Education {
   color: #000;
@@ -890,8 +877,8 @@ body {
   margin-top: 20px;
   margin-left: 300px;
   margin-bottom: 50px;
-}8
-.school h2 {
+}
+8 .school h2 {
   margin-top: 20px;
   text-decoration-line: underline;
   text-outline: 0 0 #000;
@@ -1097,3 +1084,19 @@ footer p {
   background-size: 1000px 100px;
 } */
 
+/* .toggle-btn {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+} */
+
+/* .dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+} */
