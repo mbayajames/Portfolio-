@@ -6,7 +6,9 @@
 }
 
 body {
-  color: #ededed;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .header {
@@ -22,10 +24,29 @@ body {
   z-index: 100;
   background: #051129;
   background-color: aliceblue;
+
+  /* background-color: var(--secondary-color); */
+  color: var(--primary-color);
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+:root {
+  --primary-color: #000000; /* Black text for light mode */
+  --secondary-color: #ffffff; /* White background for light mode */
+  --accent-color: aqua; /* Accent color for both modes */
+}
+
+.dark-theme {
+  --primary-color: #ffffff; /* White text for dark mode */
+  --secondary-color: #000000; /* Black background for dark mode */
 }
 
 .logo {
-  position: relative;
+  position: relative;11
   font-size: 25px;
   color: black;
   text-decoration: none;
@@ -35,7 +56,12 @@ body {
   animation: slideRight 1s ease forwards;
 }
 
+.navbar {
+  color: var(--primary-color);
+}
+
 .navbar a {
+  color: var(--primary-color);
   display: inline-block;
   font-size: 25px;
   color: black;
@@ -66,6 +92,7 @@ body {
 }
 
 .home-content {
+  color: var(--primary-color);
   max-width: 600px;
 }
 
@@ -246,7 +273,8 @@ body {
 }
 
 .about-text h2 {
-  color: black;
+  /* color: var(--primary-color); */
+  /* color: black; */
   font-size: 60px;
 }
 
@@ -255,7 +283,8 @@ body {
 }
 
 .about-text h4 {
-  color: black;
+  /* color: var(--primary-color); */
+  /* color: black; */
   font-size: 19px;
   font-weight: 600;
   line-height: 1.7;
@@ -263,7 +292,8 @@ body {
 }
 
 .about-text p {
-  color: black;
+  /* color: var(--primary-color); */
+  /* color: black; */
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
@@ -271,7 +301,7 @@ body {
 
 /* SERVICES */
 #services {
-  color: black;
+  /* color: black; */
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
@@ -363,7 +393,7 @@ body {
 }
 
 .sub-title {
-  color: #000;
+  /* color: #000; */
   text-align: center;
   font-size: 60px;
   padding-bottom: 70px;
@@ -410,7 +440,7 @@ body {
   border-style: dotted;
   border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  border-color: #000;
+  /* border-color: #000; */
 
   opacity: 0;
   animation: slideLeft 1s ease forwards;
@@ -435,7 +465,7 @@ body {
 }
 
 .h3 {
-  color: #000;
+  /* color: #000; */
   font-size: x-large;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
@@ -449,7 +479,7 @@ body {
 .list {
   list-style: none;
   margin-top: 10px;
-  color: #000;
+  /* color: #000; */
   font-size: larger;
 
   margin-top: 10px;
@@ -864,7 +894,7 @@ body {
 
 /* qualification */
 .Education {
-  color: #000;
+  /* color: #000; */
   display: flex;
 }
 
@@ -878,7 +908,7 @@ body {
 8 .school h2 {
   margin-top: 20px;
   text-decoration-line: underline;
-  text-outline: 0 0 #000;
+  /* text-outline: 0 0 #000; */
 }
 
 .certificate {
@@ -891,7 +921,7 @@ body {
 .certificate h2 {
   margin-top: 20px;
   text-decoration-line: underline;
-  text-outline: 0 0 #000;
+  /* text-outline: 0 0 #000; */
 }
 
 .certificate p {
@@ -904,7 +934,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: white;
+  /* background: white; */
 }
 
 .input {
@@ -914,7 +944,7 @@ body {
 .CONTACT h1 {
   justify-content: center;
   font-size: 40px;
-  color: black;
+  /* color: black; */
   text-align: center;
   margin-bottom: 10px;
 }
@@ -945,17 +975,17 @@ form .input-box {
   outline: none;
   border-radius: 6px;
   font-size: 16px;
-  color: black;
+  /* color: black; */
   margin: 12px 0;
 }
 
 .field .item::placeholder {
-  color: black;
+  /* color: black; */
 }
 
 .field .error-txt {
   font-size: 14.5px;
-  color: red;
+  /* color: red; */
   text-align: left;
   margin: -5px 0 10px;
   display: none;
@@ -1016,6 +1046,7 @@ footer {
   justify-content: space-between;
 }
 
+
 footer .social_icon {
   position: relative;
   display: flex;
@@ -1071,29 +1102,4 @@ footer p {
   font-size: 1.1em;
 }
 
-/* footer .wave {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: #f00 url(/5bd4326e6f6ea6800ae21aa0f2b90df9.jpg);
-  background-size: 1000px 100px;
-} */
 
-/* .toggle-btn {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: var(--background-light);
-  color: var(--text-light);
-  transition: background-color 0.3s, color 0.3s;
-} */
-
-/* .dark-mode {
-  background-color: var(--background-dark);
-  color: var(--text-dark);
-} */

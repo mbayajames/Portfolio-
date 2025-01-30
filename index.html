@@ -36,8 +36,11 @@
                 <a href="#skills" style="--i:3">Skill</a>
                 <a href="#qualification" style="--i:4">Qualification</a>
                 <a href="#contact" style="--i:5">Contact</a>
+                
                 <!-- <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button> -->
             </nav>
+
+            <img src="/images/moon.png" alt="" id="icon" onclick="toggleDarkMode()">
 
         </header>
 
@@ -491,7 +494,7 @@
 
         </section>
 
-        <footer>
+        <footer class="footers">
             <div class="div">
                 <div class="">
                     <h1>LOCATION</h1>
@@ -533,7 +536,28 @@
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script src="/js/script.js"></script>
+        <script>
+            var icon = document.getElementById("icon");
+
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-theme");
+                icon.src = "images/sun.png";
+            } else {
+                document.body.classList.remove("dark-theme");
+                icon.src = "images/moon.png";
+            }
+
+                icon.onclick = function () {
+                document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "images/sun.png";
+                localStorage.setItem("theme", "dark");
+            } else {
+                 icon.src = "images/moon.png";
+                 localStorage.setItem("theme", "light");
+              }
+            };
+        </script>
 
     </body>
 </html>
