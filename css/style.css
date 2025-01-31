@@ -46,7 +46,7 @@ body {
 }
 
 .logo {
-  position: relative;11
+  position: relative;
   font-size: 25px;
   color: black;
   text-decoration: none;
@@ -258,9 +258,10 @@ body {
   gap: 1.5rem;
 }
 
-.mine {
-  background-color: white;
-}
+/* .mine { */
+  /* background-color: white; */
+  /* color: #000; */
+/* } */
 
 .about-img img {
   box-sizing: border-box;
@@ -905,7 +906,7 @@ body {
   margin-left: 300px;
   margin-bottom: 50px;
 }
-8 .school h2 {
+ .school h2 {
   margin-top: 20px;
   text-decoration-line: underline;
   /* text-outline: 0 0 #000; */
@@ -979,9 +980,9 @@ form .input-box {
   margin: 12px 0;
 }
 
-.field .item::placeholder {
-  /* color: black; */
-}
+/* .field .item::placeholder {
+  color: black;
+} */
 
 .field .error-txt {
   font-size: 14.5px;
