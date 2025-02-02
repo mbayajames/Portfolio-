@@ -1,3 +1,5 @@
+
+// home-content
 var typed = new Typed(".text", {
     strings: ["Frontend Developer", "Backend Developer", "YouTuber"],
     typeSpeed: 100,
@@ -5,6 +7,8 @@ var typed = new Typed(".text", {
     backDelay: 1000,
     loop: true
 });
+
+// CONTACT
 
 const form = document.querySelector('form');
 
@@ -19,6 +23,8 @@ function sendEmail(){
 
 }
 
+
+// DARK MODE 
 var icon = document.getElementById("icon");
 
             if (localStorage.getItem("theme") === "dark") {
