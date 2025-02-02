@@ -241,6 +241,7 @@ body {
   border-radius: 5px;
   font-weight: 600;
   transition: 0.3s;
+  margin-top: 60px;
 }
 
 .cta-btn:hover {
