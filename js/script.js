@@ -48,4 +48,27 @@ var icon = document.getElementById("icon");
 
 
 
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                let isValid = true;
+                const fields = document.querySelectorAll(".field");
+                
+                fields.forEach(field => {
+                    const input = field.querySelector(".item");
+                    const errorText = field.querySelector(".error-txt");
+                    if (input.value.trim() === "") {
+                        errorText.style.display = "block";
+                        isValid = false;
+                    } else {
+                        errorText.style.display = "none";
+                    }
+                });
+                
+                if (isValid) {
+                    alert("Form submitted successfully!");
+                    document.getElementById("contactForm").reset();
+                }
+            });
+
+
 
