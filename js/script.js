@@ -1,3 +1,8 @@
+// MENU
+function toggleMenu() {
+    document.querySelector(".navbar").classList.toggle("active");
+}
+
 
 // home-content
 var typed = new Typed(".text", {
