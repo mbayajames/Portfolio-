@@ -43,6 +43,8 @@ body {
   font-weight: 600;
   color: var(--primary-color);
   text-decoration: none;
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
 }
 
 /* Navbar Styling */
@@ -57,6 +59,8 @@ body {
   font-weight: 500;
   color: var(--primary-color);
   transition: color 0.3s ease-in-out;
+  opacity: 0;
+  animation: slideDown 2s ease forwards;
 }
 
 .navbar a:hover {
@@ -1011,99 +1015,93 @@ form button {
   }
 }
 
-/* .footer {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100vh;
-  background: #333;
-} */
+/* FOOTER */
+
 
 footer {
+  margin-top: 50px;  /* Reduced margin */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: black;
-  padding: 10px 20px;
+  background: #222;
+  padding: 20px 10px;  /* Reduced padding */
   animation: fadeIn 1s ease forwards;
 }
 
-.div {
+.footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 footer .location {
-  margin-bottom: 20px;
+  margin-bottom: 15px;  /* Reduced margin */
   animation: slideIn 1s ease forwards;
+  color: #fff;
 }
 
-footer .social_icon,
+footer .location h1 {
+  font-size: 1.4em;  /* Slightly reduced font size */
+  margin-bottom: 8px;  /* Reduced margin */
+  color: white;
+}
+
+footer .location p {
+  font-size: 0.9em;  /* Reduced font size */
+  margin-bottom: 4px;  /* Reduced margin */
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;  /* Reduced max width */
+  flex-wrap: wrap;
+  margin-top: 15px;  /* Reduced margin */
+}
+
+footer .social-icons,
 footer .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 8px 0;  /* Reduced margin */
   flex-wrap: wrap;
   list-style: none;
   animation: fadeIn 1s ease forwards;
 }
 
-.menu {
-  list-style: none;
-}
-
-footer .social_icon li a,
+footer .social-icons li a,
 footer .menu li a {
-  font-size: 2em;
+  font-size: 1.4em;  /* Reduced font size */
   color: #fff;
-  margin: 0 10px;
+  margin: 0 12px;  /* Reduced margin between links */
   display: inline-block;
   transition: 0.5s;
   opacity: 0.75;
+  text-decoration: none;  /* Removes default link styling */
 }
 
-footer .social_icon li a:hover {
-  transform: translateY(-10px);
-}
-
+footer .social-icons li a:hover,
 footer .menu li a:hover {
-  list-style: none;
-  opacity: 1;
+  text-decoration: none;
   transform: translateY(-5px);
-}
-
-footer .menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-  list-style: none;
+  opacity: 1;
 }
 
 footer p {
   color: #fff;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
+  margin-top: 10px;  /* Reduced margin */
+  margin-bottom: 8px;  /* Reduced margin */
+  font-size: 0.85em;  /* Reduced font size */
   opacity: 0;
   animation: fadeIn 1s ease forwards;
-}
-
-.div {
-  display: flex;
 }
 
 /* Animations */
@@ -1131,34 +1129,236 @@ footer p {
 @media screen and (max-width: 990px) {
   footer {
     align-items: center;
-    padding: 20px;
+    padding: 15px 10px;  /* Reduced padding */
   }
 
-  footer .div {
+  footer .footer-content {
     flex-direction: column;
   }
 
-  footer .social_icon,
+  footer .social-icons,
   footer .menu {
     justify-content: center;
     align-items: center;
   }
 
-  footer .social_icon li a,
+  footer .social-icons li a,
   footer .menu li a {
-    font-size: 1.8em;
+    font-size: 1.2em;  /* Further reduced font size */
     margin: 5px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  footer .social_icon li a,
+  footer .social-icons li a,
   footer .menu li a {
-    font-size: 1.5em;
+    font-size: 1.1em;  /* Even smaller font size */
     margin: 5px 8px;
   }
 
   footer p {
-    font-size: 1em;
+    font-size: 0.8em;  /* Even smaller font size for paragraphs */
   }
+}
+
+
+/* animation & responsiveness */
+/* Add these animations to your CSS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Update responsive breakpoints */
+@media (max-width: 1200px) {
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .about {
+    padding: 60px 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+  }
+  
+  .home-image {
+    margin-top: 40px;
+  }
+  
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .about-img {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .home-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .container-skills {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+  
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .container-skills {
+    grid-template-columns: 1fr;
+  }
+  
+  .CONTACT form {
+    width: 95%;
+  }
+  
+  .input-box {
+    flex-direction: column;
+  }
+  
+  .input-box .input-field {
+    width: 100%;
+  }
+}
+
+/* Add animation classes */
+.fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+/* Update existing elements with animations */
+.home-content h3 {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.home-content h1 {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.home-content p {
+  animation: fadeInUp 1s ease forwards 0.2s;
+}
+
+.home-sci {
+  animation: fadeInUp 1s ease forwards 0.4s;
+}
+
+.about-text {
+  animation: slideInRight 1s ease forwards;
+}
+
+.about-img {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.services-list > div {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.skill-box {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.project-card {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Improve touch interactions */
+@media (hover: none) {
+  .project-card:hover {
+    transform: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item:hover {
+    transform: none;
+  }
+}
+
+/* Add smooth scroll behavior */
+/* html {
+  scroll-behavior: smooth;
+} */
+
+/* Improve form responsiveness */
+.textarea-field textarea {
+  min-height: 150px;
+}
+
+/* Enhance dark mode transitions */
+body, .header, .service-item {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }

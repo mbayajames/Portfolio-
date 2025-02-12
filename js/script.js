@@ -15,18 +15,6 @@ var typed = new Typed(".text", {
 
 // CONTACT
 
-const form = document.querySelector('form');
-
-function sendEmail(){
-    sendEmail.send({
-    Host : "firebase.google.com",
-    Username : "portfolioproject7@gmail.com",
-    Password : "9qMQs1sjCwTqYT37QL2NWk8wgv53",
-}).then (
-    message => alert(message)
-);
-
-}
 
 
 // DARK MODE 
@@ -53,27 +41,62 @@ var icon = document.getElementById("icon");
 
 
 
-            document.getElementById("contactForm").addEventListener("submit", function(event) {
-                event.preventDefault();
+            
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form from submitting
+        
                 let isValid = true;
-                const fields = document.querySelectorAll(".field");
-                
-                fields.forEach(field => {
+        
+                document.querySelectorAll(".field").forEach(field => {
                     const input = field.querySelector(".item");
-                    const errorText = field.querySelector(".error-txt");
+                    const errorTxt = field.querySelector(".error-txt");
+        
                     if (input.value.trim() === "") {
-                        errorText.style.display = "block";
+                        errorTxt.style.display = "block";
+                        input.classList.add("error-border");
                         isValid = false;
                     } else {
-                        errorText.style.display = "none";
+                        errorTxt.style.display = "none";
+                        input.classList.remove("error-border");
                     }
                 });
-                
+        
+                // Email Validation
+                const email = document.getElementById("email");
+                const emailError = email.nextElementSibling;
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email.value.trim())) {
+                    emailError.style.display = "block";
+                    email.classList.add("error-border");
+                    isValid = false;
+                } else {
+                    emailError.style.display = "none";
+                    email.classList.remove("error-border");
+                }
+        
+                // Phone Validation
+                const phone = document.getElementById("phone");
+                const phoneError = phone.nextElementSibling;
+                const phonePattern = /^[0-9]{10,15}$/;
+                if (!phonePattern.test(phone.value.trim())) {
+                    phoneError.style.display = "block";
+                    phone.classList.add("error-border");
+                    isValid = false;
+                } else {
+                    phoneError.style.display = "none";
+                    phone.classList.remove("error-border");
+                }
+        
                 if (isValid) {
-                    alert("Form submitted successfully!");
-                    document.getElementById("contactForm").reset();
+                    document.querySelector(".success-message").style.display = "block";
+        
+                    setTimeout(() => {
+                        document.querySelector(".success-message").style.display = "none";
+                        document.getElementById("contact-form").reset();
+                    }, 3000);
                 }
             });
+        
 
 
 
