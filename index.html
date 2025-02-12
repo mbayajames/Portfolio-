@@ -27,70 +27,86 @@
 
 
 
-        <link rel="shortcut icon" href="images/4BDA686D-7569-47F5-ABBC-31CEE0921911_1_105_c.jpeg" type="">
+        <link rel="shortcut icon"
+            href="images/4BDA686D-7569-47F5-ABBC-31CEE0921911_1_105_c.jpeg"
+            type="">
 
-        <link rel="shortcut icon" href="images/4BDA686D-7569-47F5-ABBC-31CEE0921911_1_105_c.jpeg" type="image/x-icon">
+        <link rel="shortcut icon"
+            href="images/4BDA686D-7569-47F5-ABBC-31CEE0921911_1_105_c.jpeg"
+            type="image/x-icon">
         <title>James's Portfolio</title>
     </head>
     <body>
         <header class="header">
-
-            <a href="/" class="logo">Portfolio</a>
+            <a href="/" class="logo">Mbaya</a>
 
             <nav class="navbar">
-                <a href="/" style="--i:1" class="active">Home</a>
-                <a href="#about" style="--i:2">About</a>
-                <a href="#skills" style="--i:3">Skill</a>
-                <a href="#qualification" style="--i:4">Qualification</a>
-                <a href="#contact" style="--i:5">Contact</a>
-                
-                <!-- <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button> -->
+                <a href="/" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
 
-            <img src="/images/moon.png" alt="" id="icon" onclick="toggleDarkMode()">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
 
+            <img src="/images/moon.png" alt="Toggle Dark Mode" id="icon"
+                onclick="toggleDarkMode()">
         </header>
+
 
         <section class="home">
             <div class="home-content">
-                <h3>Hello, It's Me</h3>
-                <h1>James Muthiora</h1>
-                <h3>And I'm a <span class="text"></span></h3>
-                <p>I'm a Full Stack Developer with extensive experience for over
-                    1 year.
-                    <br>expertise is to create a website ; fronted and backend .</p>
-                <div class="home-sci">
-                    <a href="https://www.facebook.com/@james.mbaya.12/"
-                        style="--i:6"><i class='bx bxl-facebook'></i></a>
+                <h3 class="fade-in">Hello, It's Me</h3>
+                <h1 class="slide-right">James Muthiora</h1>
+                <h3 class="slide-left">And I'm a <span class="text">Full Stack
+                        Developer</span></h3>
+                <p class="fade-in">
+                    I'm a Full Stack Developer with over 1 year of experience.
+                    My expertise includes designing and developing high-quality
+                    front-end and back-end solutions.
+                </p>
+
+                <div class="home-sci slide-up">
+                    <a href="https://www.facebook.com/@james.mbaya.12/"><i
+                            class='bx bxl-facebook'></i></a>
                     <a
-                        href="https://www.instagram.com/coolkidniccur_4?igsh=cmoyajRwcDhqbHIv"
-                        style="--i:7"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://wa.me/message/RGP2EQI2CAGKM1"
-                        style="--i:8"><i class='bx bxl-whatsapp'></i></a>
+                        href="https://www.instagram.com/coolkidniccur_4?igsh=cmoyajRwcDhqbHIv"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/message/RGP2EQI2CAGKM1"><i class='bx
+                            bxl-whatsapp'></i></a>
                     <a
-                        href="https://www.tiktok.com/@young_billion_aire?_t=ZM-8sk1BkYFBNV&_r=1"
-                        style="--i:9"><i class='bx bxl-tiktok'></i></a>
+                        href="https://www.tiktok.com/@young_billion_aire?_t=ZM-8sk1BkYFBNV&_r=1"><i
+                            class='bx bxl-tiktok'></i></a>
                     <a
-                        href="https://www.linkedin.com/in/james-muthiora-89915a271/"
-                        style="--i:10"><i class='bx bxl-linkedin'></i></a>
+                        href="https://www.linkedin.com/in/james-muthiora-89915a271/"><i
+                            class='bx bxl-linkedin'></i></a>
                 </div>
-                <!-- <a href="PDF_Maker_1738477501638.pdf" class="cta-btn">Download CV</a> -->
-                <a href="/images/PDF_Maker_1738477501638.pdf" class="btn-box">Download CV</a>
+
+                <a href="/images/PDF_Maker_1738477501638.pdf" class="btn-box
+                    bounce">Download CV</a>
             </div>
 
             <div class="">
                 <img
                     src="/images/4BDA686D-7569-47F5-ABBC-31CEE0921911_1_105_c.jpeg"
-                    class="images" alt="">
+                    class="images" alt="James Muthiora">
             </div>
         </section>
+
+
 
         <section class="about" id="about">
 
             <div class="about-img">
                 <img
                     src="images//0029FD52-C5E0-44E1-B096-4E74A4DD533C.jpeg"
-                    class="mine" alt="">
+                    class="mine" alt="James Muthiora">
             </div>
 
             <div class="about-text">
@@ -126,51 +142,87 @@
         <section class="SERVICES">
             <div class="services" id="services">
                 <div class="containera">
-                    <h1 class="sub-title">My <span>Services</span></h1>
+                    <h1 class="sub-title-header" id="skills">My <span>Services</span></h1>
+                    <div class="services-container">
+                        <h2>Work With Me</h2>
+                        <p>I specialize in creating high-quality, scalable web
+                            applications and providing expert technical
+                            training. Whether you're a business looking for a
+                            reliable developer or a student seeking guidance,
+                            I’m here to help.</p>
+                    </div>
+
+                    <div class="services-work">
+                        <h3>How I Work</h3>
+                        <ul>
+                            <li><strong>Step 1:</strong> Consultation – Discuss
+                                your needs and goals.</li>
+                            <li><strong>Step 2:</strong> Proposal & Plan –
+                                Receive a customized strategy and timeline.</li>
+                            <li><strong>Step 3:</strong> Development &
+                                Collaboration – Regular updates and feedback.</li>
+                            <li><strong>Step 4:</strong> Delivery & Support –
+                                Smooth project handover with post-launch
+                                support.</li>
+                        </ul>
+                    </div>
                     <div class="services-list">
-                        <!-- <div>
-                            <h2>Portfolio</h2>
-                            <img src="https://github.com/mbayajames/Portfolio-.git" class="photo" alt="">
-                            <p>This portfolio appears to be a personal website for showcasing professional skills and experience.</p>
-                            <a href="https://github.com/mbayajames/Portfolio-.git" class="read">Learn More</a>
-                        </div> -->
                         <div>
-                            <i class="bx bxl-apple"></i>
-                            <h2>UI/UX Design</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Nemo aut dignissimos
-                                consequuntur sapiente, enim eius, odio molestiae
-                                labore commodi, et expedita. Quae voluptatem
-                                odio architecto praesentium corrupti deleniti
-                                itaque culpa.</p>
-                            <!-- <a href="#" class="read">Learn More</a> -->
-                        </div>
-                        
-
-                        <div>
-                            <i class="bx bx-crop"></i>
-                            <h2>UI/UX Design</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Cumque atque pariatur error
-                                eum laboriosam doloremque, architecto fuga,
-                                itaque ea nulla, rerum sint cum dicta obcaecati
-                                blanditiis earum beatae voluptate dolorem!</p>
+                            <img src="images/web.png" alt=""
+                                class="images-services"/>
+                            <h2>Web Application</h2>
+                            <p>Web design encompasses many different skills and
+                                disciplines in the production and maintenance of
+                                websites. The different areas of web design
+                                include web graphic design user interface design
+                                authoring, including standardised code and
+                                proprietary software user experience design and
+                                search engine</p>
                             <!-- <a href="#" class="read">Learn More</a> -->
                         </div>
 
+
                         <div>
-                            <i class="bx bxl-apple"></i>
-                            <h2>UI/UX Design</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Nemo aut dignissimos
-                                consequuntur sapiente, enim eius, odio molestiae
-                                labore commodi, et expedita. Quae voluptatem
-                                odio architecto praesentium corrupti deleniti
-                                itaque culpa.</p>
+                            <img src="images//mobile.png" alt=""
+                                class="images-services"/>
+                            <h2>Mobile Application</h2>
+                            <p>We provide a range of mobile application
+                                development services including custom mobile
+                                development on Android platforms, building
+                                cross-platform apps, designing user experience
+                                and integrating novel mobile interfaces such as
+                                chat and voice</p>
+                            <!-- <a href="#" class="read">Learn More</a> -->
+                        </div>
+
+                        <div>
+                            <img src="images/backend.png" alt=""
+                                class="images-services"/>
+                            <h2>Backend Development</h2>
+                            <p>Graphic design is a craft where professionals
+                                create visual content to communicate messages.
+                                By applying visual hierarchy and page layout
+                                techniques, designers use typography and
+                                pictures to meet users' specific needs and focus
+                                on the logic of displaying elements in
+                                interactive designs, to optimize the user
+                                experience.</p>
                             <!-- <a href="#" class="read">Learn More</a> -->
                         </div>
 
                     </div>
+
+                    <div class="services-work">
+                        <h3>Why Work With Me?</h3>
+                        <ul>
+                            <li>Proven Experience – Years of expertise in software development and education.</li>
+                            <li>Tailored Solutions – Custom-built applications and training for your needs.</li>
+                            <li>Reliable & Transparent – Clear communication, timely delivery, and quality results.</li>
+                        </ul>
+                    </div>
+                    
+                    <p>Email me at: <a href="mailto:muthiorajames39@gmail.com" class="email">muthiorajames39@gmail.com</a></p>
+
                 </div>
             </div>
         </section>
@@ -179,186 +231,253 @@
             <h1 class="sub-title-header" id="skills">My <span>Skills</span></h1>
         </section>
 
-         <section class="sectionc">
+        <section class="sectionc">
             <div class="inner-skills">
-    
                 <div class="container-skills">
                     <div class="skill-box">
                         <div class="skill-title">
                             <div class="img-skills">
-                                <img src="/images/HTML 5.png" alt="" class="skill-icon">
+                                <img src="/images/HTML 5.png" alt=""
+                                    class="skill-icon">
                             </div>
-    
                             <h3>HTML 5</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Rerum recusandae eius voluptates eligendi quidem maiores
-                            veniam beatae sint. Suscipit ratione veniam accusantium
-                            quod incidunt repudiandae beatae consequuntur esse
-                            sapiente culpa!</p>
+                        <!-- <p>HTML5 is the latest version of HyperText Markup Language, used for structuring web content. It provides advanced features such as semantic elements, multimedia integration, and improved performance for modern web applications.</p> -->
                     </div>
-    
+
                     <div class="skill-box">
                         <div class="skill-title">
                             <div class="img-skills">
-                                <img src="/images/CSS 3.png" alt="" class="skill-icon">
+                                <img src="/images/CSS 3.png" alt=""
+                                    class="skill-icon">
                             </div>
-    
                             <h3>CSS 3</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Rerum recusandae eius voluptates eligendi quidem maiores
-                            veniam beatae sint. Suscipit ratione veniam accusantium
-                            quod incidunt repudiandae beatae consequuntur esse
-                            sapiente culpa!</p>
+                        <!-- <p>CSS3 enhances the styling and layout of web pages with features like animations, transitions, flexbox, and grid systems. It enables responsive designs, ensuring a seamless user experience across various devices.</p> -->
                     </div>
-    
+
                     <div class="skill-box">
                         <div class="skill-title">
                             <div class="img-skills">
-                                <img src="/images//JavaScript.png" alt="" class="skill-icon">
+                                <img src="/images/JavaScript.png" alt=""
+                                    class="skill-icon">
                             </div>
-    
                             <h3>JavaScript</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Rerum recusandae eius voluptates eligendi quidem maiores
-                            veniam beatae sint. Suscipit ratione veniam accusantium
-                            quod incidunt repudiandae beatae consequuntur esse
-                            sapiente culpa!</p>
+                        <!-- <p>JavaScript is a powerful programming language for creating dynamic and interactive web applications. With modern frameworks like React and Vue, it plays a crucial role in front-end development and full-stack applications.</p> -->
                     </div>
-    
+
                     <div class="skill-box">
                         <div class="skill-title">
                             <div class="img-skills">
-                                <img src="/images/Python.png" alt="" class="skill-icon">
+                                <img src="/images/Python.png" alt=""
+                                    class="skill-icon">
                             </div>
-    
                             <h3>Python</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Rerum recusandae eius voluptates eligendi quidem maiores
-                            veniam beatae sint. Suscipit ratione veniam accusantium
-                            quod incidunt repudiandae beatae consequuntur esse
-                            sapiente culpa!</p>
+                        <!-- <p>Python is a versatile programming language widely used in web development, data science, machine learning, and automation. Its readability and vast ecosystem of libraries make it a preferred choice for developers.</p> -->
                     </div>
-    
+
                     <div class="skill-box">
                         <div class="skill-title">
                             <div class="img-skills">
-                                <img src="/images/SASS.png" alt="" class="skill-icon">
+                                <img src="/images/SASS.png" alt=""
+                                    class="skill-icon">
                             </div>
-    
                             <h3>Sass</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Rerum recusandae eius voluptates eligendi quidem maiores
-                            veniam beatae sint. Suscipit ratione veniam accusantium
-                            quod incidunt repudiandae beatae consequuntur esse
-                            sapiente culpa!</p>
+                        <!-- <p>Sass (Syntactically Awesome Stylesheets) is a CSS preprocessor that enhances styling with variables, mixins, and nested rules, making CSS more maintainable and scalable for complex projects.</p> -->
                     </div>
-    
+
                     <div class="skill-box">
                         <div class="skill-title">
                             <div class="img-skills">
-                                <img src="/images/MYSQL.png" alt="" class="skill-icon">
+                                <img src="/images/MYSQL.png" alt=""
+                                    class="skill-icon">
                             </div>
-    
-                            <h3>MYSQL</h3>
+                            <h3>MySQL</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Rerum recusandae eius voluptates eligendi quidem maiores
-                            veniam beatae sint. Suscipit ratione veniam accusantium
-                            quod incidunt repudiandae beatae consequuntur esse
-                            sapiente culpa!</p>
+                        <!-- <p>MySQL is a widely used relational database management system known for its scalability, security, and efficiency. It is commonly used in web applications to store and manage structured data securely.</p> -->
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
+
+        <!-- PROJECTS -->
+
+        <section class="projects" id="projects">
+            <h1 class="sub-title-header" id="skills">My <span>Projects</span></h1>
+            <div class="project-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                  <div class="project-img">
+                    
+                      <!-- <img loading="lazy" src="/images/porfolio screenshoot.png" alt="Portfolio Website"> -->
+                  </div>
+              
+                  <div class="project-info">
+                      <h3 class="project-title">Mbaya porfolio</h3>
+                      <!-- <p class="project-desc">Full-stack e-commerce platform with payment integration and admin dashboard.</p> -->
+                      
+                      <div class="tech-stack">
+                          <span class="tech">Html</span>
+                          <span class="tech">Css</span>
+                          <span class="tech">Javascript</span>
+                      </div>
+          
+                      <div class="project-links">
+                          <a href="https://github.com/mbayajames/Portfolio-.git" class="github-link">
+                              <i class='bx bxl-github'></i>
+                              View Source Code
+                          </a>
+                          <a href="" class="live-demo">
+                              Live Demo
+                          </a>
+                      </div>
+          
+                      <div class="github-stats">
+                          <span class="stat">
+                              <i class='bx bx-star'></i>
+                              24 stars
+                          </span>
+                          <span class="stat">
+                              <i class='bx bx-git-repo-forked'></i>
+                              12 forks
+                          </span>
+                      </div>
+                  </div>
+              </div>
+      
+                <!-- Project 2 -->
+                <div class="project-card">
+                  <div class="project-img">
+                      <img src="images/carwash-site .png" alt="carwash-sites">
+                  </div>
+                  <div class="project-info">
+                      <h3 class="project-title">Carwash Sites</h3>
+                      <p class="project-desc"></p>
+                      
+                      <div class="tech-stack">
+                          <span class="tech">HTML</span>
+                          <span class="tech">CSS</span>
+                          <span class="tech">JavaScript</span>
+                      </div>
+          
+                      <div class="project-links">
+                          <a href="https://github.com/mbayajames/Carwash-sites" class="github-link">
+                              <i class='bx bxl-gitourusername/project-namehub'></i>
+                              View Source Code
+                          </a>
+                          <a href="https://carwash-sites.vercel.app/" class="live-demo">
+                              Live Demo
+                          </a>
+                      </div>
+          
+                      <div class="github-stats">
+                          <span class="stat">
+                              <i class='bx bx-star'></i>
+                              24 stars
+                          </span>
+                          <span class="stat">
+                              <i class='bx bx-git-repo-forked'></i>
+                              12 forks
+                          </span>
+                      </div>
+                  </div>
+              </div>
+      
+                <!-- Project 3 -->
+                <div class="project-card">
+                  <div class="project-img">
+                      <img src="images/PHOTO-2025-02-12-07-07-38.jpg" alt="To do list">
+                  </div>
+                  <div class="project-info">
+                      <h3 class="project-title">To Do List</h3>
+                      <!-- <p class="project-desc">Full-stack e-commerce platform with payment integration and admin dashboard.</p> -->
+                      
+                      <div class="tech-stack">
+                          <span class="tech">HTML</span>
+                          <span class="tech">CSS</span>
+                          <!-- <span class="tech">MongoDB</span> -->
+                      </div>
+          
+                      <div class="project-links">
+                          <a href="https://github.com/mbayajames/To-do-list" class="github-link">
+                              <i class='bx bxl-github'></i>
+                              View Source Code
+                          </a>
+                          <a href="https://to-do-list-red-xi-97.vercel.app/" class="live-demo">
+                              Live Demo
+                          </a>
+                      </div>
+          
+                      <div class="github-stats">
+                          <span class="stat">
+                              <i class='bx bx-star'></i>
+                              24 stars
+                          </span>
+                          <span class="stat">
+                              <i class='bx bx-git-repo-forked'></i>
+                              12 forks
+                          </span>
+                      </div>
+                  </div>
+              </div>
+        </section>
+
         
-         <!-- QUALIFICATION -->
-        <section class="qualification" id="qualification">
-            <h1 class="sub-title">My <span>Qualifications</span></h1>
-        </section>
 
-        <section class="Education">
-            <div class="school">
-                <h2>Education</h2>
-                <p>Full Stack Software Development.</p>
-                
-            </div>
+        <!-- CONTACTS -->
 
-            <div class="certificate">
-                <h2>Certifications</h2>
-                <p>Certificate of Full-Stack Software Development Core Program at Zindua School (Class of 2023). </p>
-                <p>Certificate of Python Language class of 2023.</p>
-                <p>Diploma of Full-Stack Software Development at Institute of Software Technologies Limited .</p>
-
-            </div>
-        </section>
-
-
-            <!-- CONTACTS -->
-
-            <section class="CONTACT" id="contact">
-
-                <form action="#">
-
-
-                    <div class="input">
-
-                        <h1 class="me">Contact Me!</h1>
-
-                    </div>
-                    <div class="input-box">
-                        <div class="input-field field">
-                            <input type="text" placeholder="Full Name" id="name"
-                                class="item" autocomplete="off">
-                            <div class="error-txt">Full Name can't be blank</div>
-                        </div>
-
-                        <div class="input-field field">
-                            <input type="text" placeholder="Email Address"
-                                id="email"
-                                class="item" autocomplete="off">
-                            <div class="error-txt">Email Address can't be blank</div>
-                        </div>
+        <section class="CONTACT" id="contact">
+            <form action="#">
+                <div class="input">
+                    <h1 class="me">Contact Me!</h1>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Full Name" id="name"
+                            class="item" autocomplete="off">
+                        <div class="error-txt">Full Name can't be blank</div>
                     </div>
 
-                    <div class="input-box">
-                        <div class="input-field field">
-                            <input type="text" placeholder="Phone Number"
-                                id="phone"
-                                class="item" autocomplete="off">
-                            <div class="error-txt">Phone Number can't be blank</div>
-                        </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Email Address"
+                            id="email" class="item" autocomplete="off">
+                        <div class="error-txt">Email Address can't be blank</div>
+                    </div>
+                </div>
 
-                        <div class="input-field field">
-                            <input type="text" placeholder="Subject"
-                                id="subject"
-                                class="item" autocomplete="off">
-                            <div class="error-txt">Subject can't be blank</div>
-                        </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Phone Number" id="phone"
+                            class="item" autocomplete="off">
+                        <div class="error-txt">Phone Number can't be blank</div>
                     </div>
 
-                    <div class="textarea-field field">
-                        <textarea name="" id="message" cols="30" rows="10"
-                            placeholder="Your Message" class="item"
-                            autocomplete="off"></textarea>
-                        <div class="error-txt">Message can't be blank</div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Subject" id="subject"
+                            class="item" autocomplete="off">
+                        <div class="error-txt">Subject can't be blank</div>
                     </div>
+                </div>
+
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10"
+                        placeholder="Your Message" class="item"
+                        autocomplete="off"></textarea>
+                    <div class="error-txt">Message can't be blank</div>
                 </div>
 
                 <button type="submit" class="submit">Send Message</button>
             </form>
-
         </section>
 
         <footer class="footers">
             <div class="div">
-                <div class="">
+                <div class="location">
                     <h1>LOCATION</h1>
-                    <h3>Nairobi,Kenya</h3>
+                    <h3>Nairobi, Kenya</h3>
                 </div>
 
                 <div class="footer">
@@ -381,16 +500,16 @@
                     <ul class="menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skill</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#qualification">Qualification</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-
                 </div>
-
             </div>
-
+            <p>© 2025 All rights reserved</p>
         </footer>
+
 
         <script type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
