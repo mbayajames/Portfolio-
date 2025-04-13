@@ -71,7 +71,13 @@ body {
 #icon {
   width: 30px;
   cursor: pointer;
+  transition: color 0.3s; 
 }
+
+.dark-theme #icon {
+  filter: invert(1); 
+}
+
 
 /* Responsive Navigation (Mobile) */
 .menu-toggle {
@@ -117,6 +123,10 @@ body {
   /* Active class for mobile menu */
   .navbar.active {
     height: 300px;
+  }
+
+  .menu-toggle {
+    display: flex;
   }
 }
 
@@ -441,6 +451,11 @@ body {
   text-align: center;
 }
 
+#services h1 {
+  font-size: 70px;
+}
+
+
 /* Section Title */
 .sub-title {
   font-size: 48px;
@@ -449,7 +464,7 @@ body {
 }
 
 .sub-title span {
-  color: aqua;
+  color: #00ffff;
 }
 
 /* Services Container */
@@ -1348,10 +1363,6 @@ footer p {
   }
 }
 
-/* Add smooth scroll behavior */
-/* html {
-  scroll-behavior: smooth;
-} */
 
 /* Improve form responsiveness */
 .textarea-field textarea {
